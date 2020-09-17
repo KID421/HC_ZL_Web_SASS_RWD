@@ -31,17 +31,23 @@
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  letter-spacing: 2px;
 }
 
 #navigation .logo:hover {
   color: #6eb3ff;
 }
 
+#navigation .link {
+  text-align: center;
+}
+
 #navigation .link a {
   text-decoration: none;
-  padding: 60px;
+  padding: 30px 30px 30px 40px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  letter-spacing: 10px;
 }
 
 #navigation .link a:hover {
@@ -70,5 +76,10 @@
   width: 100%;
   height: 100vh;
   background: #eee;
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
