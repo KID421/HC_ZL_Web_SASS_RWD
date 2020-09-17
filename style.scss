@@ -86,11 +86,11 @@ $font-family-main: "Bebas Neue", cursive;
     text-align: center;
 
     h2 {
-        font-size: 300px;
+        font-size: 420px;
         font-family: $font-family-main;
-        letter-spacing: 20px;
-        padding-left: 20px;
-        margin-top: 100px;
+        letter-spacing: 30px;
+        padding-left: 30px;
+        margin-top: 50px;
     }
     
     p {
@@ -99,11 +99,13 @@ $font-family-main: "Bebas Neue", cursive;
     }
 }
 
+// 標題
 .title {
     font-size: $font-size-big;
-    padding: 20px;
+    padding: 50px;
 }
 
+// 按鈕：盒型
 .button-box {
     padding: 10px 60px;
     border: 2px solid $color-main;

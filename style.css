@@ -85,11 +85,11 @@
 }
 
 #about h2 {
-  font-size: 300px;
+  font-size: 420px;
   font-family: "Bebas Neue", cursive;
-  letter-spacing: 20px;
-  padding-left: 20px;
-  margin-top: 100px;
+  letter-spacing: 30px;
+  padding-left: 30px;
+  margin-top: 50px;
 }
 
 #about p {
@@ -99,7 +99,7 @@
 
 .title {
   font-size: 36px;
-  padding: 20px;
+  padding: 50px;
 }
 
 .button-box {
