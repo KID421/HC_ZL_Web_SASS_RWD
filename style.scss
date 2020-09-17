@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 // 主色與次要色
 $color-main: #252525;
-$color-sub: #6EB3FF;
+$color-sub: #6eb3ff;
 
 * {
     margin: 0;
@@ -14,15 +14,19 @@ $color-sub: #6EB3FF;
 
 // 導覽列
 #navigation {
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 20px 0;
+    padding: 20px 120px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    // 固定：寬度會跑掉
+    position: fixed;
+    width: 100%;
+    background: white;
 
     .logo {
-        font-family: 'Bebas Neue', cursive;
-        font-size: 32px;
+        font-family: "Bebas Neue", cursive;
+        font-size: 42px;
         text-decoration: none;
         transition: 0.3s;
 
@@ -31,16 +35,37 @@ $color-sub: #6EB3FF;
         }
     }
 
+    .link {
+        a {
+            text-decoration: none;
+            padding: 60px;
+            transition: 0.3s;
+
+            &:hover {
+                color: $color-sub;
+            }
+        }
+    }
+
     .social {
+        text-align: right;
 
         img {
-
             filter: invert(9%) sepia(11%) saturate(6%) hue-rotate(336deg) brightness(100%) contrast(86%);
             transition: 0.2s;
+            width: 32px;
+            margin-left: 30px;
 
             &:hover {
                 filter: invert(63%) sepia(8%) saturate(2974%) hue-rotate(177deg) brightness(105%) contrast(102%);
             }
         }
     }
+}
+
+// 橫幅
+#banner {
+    width: 100%;
+    height: 100vh;
+    background: #eee;
 }
