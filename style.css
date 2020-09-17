@@ -6,6 +6,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 微軟正黑體;
+  color: #252525;
 }
 
 #navigation {
@@ -16,6 +17,18 @@
   padding: 20px 0;
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#navigation .logo {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 32px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#navigation .logo:hover {
+  color: #6EB3FF;
 }
 
 #navigation .social img {
