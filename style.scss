@@ -3,6 +3,7 @@
 // 主色與次要色
 $color-main: #252525;
 $color-sub: #6eb3ff;
+$color-bg-gray: #f9f9f9;
 
 // 文字大小：最大
 $font-size-big: 36px;
@@ -15,7 +16,7 @@ $font-family-main: "Bebas Neue", cursive;
     box-sizing: border-box;
     font-family: 微軟正黑體;
     color: $color-main;
-}
+} 
 
 // 導覽列
 #navigation {
@@ -103,6 +104,7 @@ $font-family-main: "Bebas Neue", cursive;
 .title {
     font-size: $font-size-big;
     padding: 50px;
+    text-align: center;
 }
 
 // 按鈕：盒型
@@ -115,5 +117,19 @@ $font-family-main: "Bebas Neue", cursive;
     &:hover {
         background: $color-main;
         color: white;
+    }
+}
+
+// 作品集
+#works {
+    height: 100vh;
+    background: $color-bg-gray;
+
+    #work-box {
+        width: 1200px;
+        display: grid;
+        margin: 0 auto;
+        // repeat(數量，一格的寬度)
+        grid-template-columns: repeat(3, 1fr);
     }
 }
