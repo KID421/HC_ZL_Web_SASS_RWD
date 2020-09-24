@@ -119,6 +119,11 @@ $font-family-main: "Bebas Neue", cursive;
         color: white;
     }
 }
+// 按鈕外的區塊
+.button-div {
+    text-align: center;
+    margin-top: 50px;
+}
 
 // 作品集
 #works {
@@ -156,6 +161,7 @@ $font-family-main: "Bebas Neue", cursive;
                 border-radius: 30px;
                 padding: 3px 12px;
                 margin-top: 12px;
+                margin-left: 10px;
                 font-size: 12px;
             }
         }
