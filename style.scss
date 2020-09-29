@@ -38,6 +38,10 @@ $mobile: 767px;
     // 深度軸：離眼睛越近數字越大
     z-index: 1;
 
+    @media screen and (min-width: $desktop) {
+        grid-template-areas: "logo link social";
+    }
+
     // 平板
     @media screen and (max-width: $table) {
         // 格線樣版區域： " 區域名稱 "
@@ -84,6 +88,7 @@ $mobile: 767px;
 
 .link {
     text-align: center;
+    grid-area: link;
 
     a {
         text-decoration: none;
@@ -143,6 +148,10 @@ $mobile: 767px;
         padding-left: 30px;
         margin-top: 50px;
 
+        // 平板
+        @media screen and (max-width: $table) {
+            margin-top: 200px;
+        }
         // 手機
         @media screen and (max-width: $mobile) {
             font-size: 64px;
@@ -187,6 +196,12 @@ $mobile: 767px;
 #works {
     height: 100vh;
     background: $color-bg-gray;
+
+    // 平板
+    @media screen and (max-width: $table) {
+        height: auto;
+        padding-bottom: 100px;
+    }
     // 手機
     @media screen and (max-width: $mobile) {
         height: auto;

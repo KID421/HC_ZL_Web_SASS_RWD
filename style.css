@@ -24,6 +24,12 @@
   z-index: 1;
 }
 
+@media screen and (min-width: 1025px) {
+  #navigation {
+        grid-template-areas: "logo link social";
+  }
+}
+
 @media screen and (max-width: 1024px) {
   #navigation {
         grid-template-areas: "logo social menu";
@@ -75,6 +81,7 @@
 
 .link {
   text-align: center;
+  grid-area: link;
 }
 
 .link a {
@@ -140,6 +147,12 @@
   margin-top: 50px;
 }
 
+@media screen and (max-width: 1024px) {
+  #about h2 {
+    margin-top: 200px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #about h2 {
     font-size: 64px;
@@ -181,6 +194,13 @@
 #works {
   height: 100vh;
   background: #f9f9f9;
+}
+
+@media screen and (max-width: 1024px) {
+  #works {
+    height: auto;
+    padding-bottom: 100px;
+  }
 }
 
 @media screen and (max-width: 767px) {
