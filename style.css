@@ -25,6 +25,22 @@
   background: white;
 }
 
+#navigation #menu {
+  grid-area: menu;
+}
+
+@media screen and (min-width: 1025px) {
+  #navigation #menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #navigation #menu {
+    display: block;
+  }
+}
+
 .logo {
   font-family: "Bebas Neue", cursive;
   font-size: 42px;
@@ -32,6 +48,7 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   letter-spacing: 2px;
+  grid-area: logo;
 }
 
 .logo:hover {
@@ -54,8 +71,15 @@
   color: #6eb3ff;
 }
 
+@media screen and (max-width: 1024px) {
+  .link {
+    display: none;
+  }
+}
+
 .social {
   text-align: right;
+  grid-area: social;
 }
 
 .social img {
