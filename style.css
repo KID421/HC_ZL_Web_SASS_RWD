@@ -131,6 +131,11 @@
   width: 100%;
   height: 100vh;
   background: #eee;
+  overflow: hidden;
+}
+
+#banner .dots {
+  bottom: 80px;
 }
 
 #about {
